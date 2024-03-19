@@ -1,9 +1,11 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
-public class GaussElim {
+public class GaussianEliminationSolver {
   private final JTextField[][] fields;
 
-  public GaussElim(JTextField[][] textFields) {
+  public GaussianEliminationSolver(JTextField[][] textFields) {
     this.fields = textFields;
   }
 

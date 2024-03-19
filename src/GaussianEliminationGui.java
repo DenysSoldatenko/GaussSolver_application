@@ -13,11 +13,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class GaussGUI implements ActionListener {
+public class GaussianEliminationGui implements ActionListener {
   private final JTextField[][] fields = new JTextField[3][4];
   private final JTextArea resultArea;
 
-  public GaussGUI() {
+  public GaussianEliminationGui() {
     JFrame frame = new JFrame("Gaussian elimination calculator");
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setLayout(new BorderLayout());
@@ -67,7 +67,7 @@ public class GaussGUI implements ActionListener {
   }
 
   public void actionPerformed(ActionEvent e) {
-    GaussElim gauss = new GaussElim(fields);
+    GaussianEliminationSolver gauss = new GaussianEliminationSolver(fields);
     double[][] matrix = new double[3][4];
     double[] solution = new double[3];
 
